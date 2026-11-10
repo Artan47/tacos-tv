@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>TV1</title>
+<style>
+html,body{margin:0;height:100%;background:#000;overflow:hidden;cursor:none}
+#stage{position:absolute;left:50%;top:50%;width:1080px;height:1920px;transform-origin:50% 50%;background:#000}
+#stage img,#stage video{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover;display:block}
+#vid{opacity:0;transition:opacity .4s}
+</style></head>
+<body data-tv="tv1">
+<div id="stage"><img id="img" alt=""><video id="vid" muted loop playsinline autoplay preload="auto"></video></div>
+<script src="../player.js?b=1794305521"></script>
+</body></html>
