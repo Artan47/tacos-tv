@@ -1,1 +1,15 @@
-{"version":"202611101012"}
+{
+  "version": "202611151700",
+  "tv1": [
+    { "type": "video", "src": "media/tv1.mp4", "secours": "media/tv1.png" }
+  ],
+  "tv2": [
+    { "type": "video", "src": "media/tv2.mp4", "secours": "media/tv2.png" }
+  ],
+  "tv3": [
+    { "type": "video", "src": "media/tv3.mp4", "secours": "media/tv3.png" }
+  ],
+  "tv4": [
+    { "type": "video", "src": "media/tv4.mp4", "secours": "media/tv4.png" }
+  ]
+}

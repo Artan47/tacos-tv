@@ -1,3 +1,39 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Écrans TV</title>
-<style>body{font-family:system-ui,sans-serif;background:#111;color:#fff;padding:24px}a{color:#ffd400;font-size:24px;display:block;margin:12px 0}</style></head>
-<body><h1>Écrans TV</h1><a href="tv1/">TV1 – Tacos</a><a href="tv2/">TV2 – Burgers · Sandwichs</a><a href="tv3/">TV3 – Sauces · Salades</a><a href="tv4/">TV4 – Buckets · Desserts · Boissons</a></body></html>
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Écrans TV – The Tacos Factory</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#111;color:#fff;padding:20px}
+h1{font-size:22px;margin:0 0 4px}
+p.sub{margin:0 0 18px;color:#aaa;font-size:14px}
+.wall{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:1400px}
+@media (max-width:760px){.wall{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tv{margin:0}
+.screen{position:relative;aspect-ratio:9/16;background:#000;overflow:hidden;border:3px solid #000;border-radius:4px}
+.screen iframe{position:absolute;left:0;top:0;width:1080px;height:1920px;border:0;transform-origin:0 0;pointer-events:none}
+figcaption{display:flex;justify-content:space-between;gap:8px;margin-top:8px;font-size:14px}
+figcaption a{color:#ffc20f;text-decoration:none;font-weight:600}
+code{color:#ddd;font-size:12px;word-break:break-all}
+</style></head>
+<body>
+<h1>Écrans TV – The Tacos Factory</h1>
+<p class="sub">Aperçu en direct des 4 écrans. Chaque Fire Stick ouvre le lien de sa TV.</p>
+<div class="wall">
+  <figure class="tv"><div class="screen"><iframe src="tv1/?rot=0&amp;preview=1" title="TV1"></iframe></div>
+    <figcaption><span>TV1 · Tacos</span><a href="tv1/">Ouvrir</a></figcaption><code class="link" data-tv="tv1"></code></figure>
+  <figure class="tv"><div class="screen"><iframe src="tv2/?rot=0&amp;preview=1" title="TV2"></iframe></div>
+    <figcaption><span>TV2 · Burgers, sandwichs</span><a href="tv2/">Ouvrir</a></figcaption><code class="link" data-tv="tv2"></code></figure>
+  <figure class="tv"><div class="screen"><iframe src="tv3/?rot=0&amp;preview=1" title="TV3"></iframe></div>
+    <figcaption><span>TV3 · Sauces, salades</span><a href="tv3/">Ouvrir</a></figcaption><code class="link" data-tv="tv3"></code></figure>
+  <figure class="tv"><div class="screen"><iframe src="tv4/?rot=0&amp;preview=1" title="TV4"></iframe></div>
+    <figcaption><span>TV4 · Buckets, desserts</span><a href="tv4/">Ouvrir</a></figcaption><code class="link" data-tv="tv4"></code></figure>
+</div>
+<script>
+function fit(){document.querySelectorAll('.screen').forEach(function(s){
+  s.querySelector('iframe').style.transform='scale('+(s.clientWidth/1080)+')';});}
+window.addEventListener('resize',fit);fit();
+document.querySelectorAll('code.link').forEach(function(c){
+  c.textContent=new URL(c.getAttribute('data-tv')+'/',location.href).href;});
+</script>
+</body></html>
