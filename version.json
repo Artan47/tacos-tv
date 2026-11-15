@@ -1,15 +1,35 @@
 {
-  "version": "202611151700",
+  "version": "202611151830",
   "tv1": [
-    { "type": "video", "src": "media/tv1.mp4", "secours": "media/tv1.png" }
+    {
+      "type": "canva",
+      "src": "https://www.canva.com/design/DAHa-wU1no0/QyTvyJPpJxHxAUG6bydN6Q/view?embed",
+      "hauteur": 2000,
+      "secours": "media/tv1.png"
+    }
   ],
   "tv2": [
-    { "type": "video", "src": "media/tv2.mp4", "secours": "media/tv2.png" }
+    {
+      "type": "canva",
+      "src": "https://www.canva.com/design/DAHa-1HdPj4/53u09UBesD7ZuQR64FJzFg/view?embed",
+      "hauteur": 2000,
+      "secours": "media/tv2.png"
+    }
   ],
   "tv3": [
-    { "type": "video", "src": "media/tv3.mp4", "secours": "media/tv3.png" }
+    {
+      "type": "canva",
+      "src": "https://www.canva.com/design/DAHa-8nXo-A/5n4ACcfKegIL_k6C0Fc1xQ/view?embed",
+      "hauteur": 2000,
+      "secours": "media/tv3.png"
+    }
   ],
   "tv4": [
-    { "type": "video", "src": "media/tv4.mp4", "secours": "media/tv4.png" }
+    {
+      "type": "canva",
+      "src": "https://www.canva.com/design/DAHa-_TuH44/r5dZVFmujrEEyghcYedj3g/view?embed",
+      "hauteur": 2000,
+      "secours": "media/tv4.png"
+    }
   ]
 }
