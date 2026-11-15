@@ -4,6 +4,14 @@ Une page par TV : `tv1/` … `tv4/`. La page d'accueil montre les 4 écrans en d
 Chaque Fire Stick (Fully Kiosk) ouvre le lien de sa TV. Les TV vérifient `version.json`
 chaque minute et se rechargent toutes seules quand il change.
 
+## Configuration actuelle (15.11.2026)
+
+Les 4 TV affichent les designs Canva du dossier **The Tacos Factory › Écrans TV**
+(« TV1 – Tacos (écran) » … « TV4 – … (écran) », format 1080×2000). Toute modification
+enregistrée dans Canva arrive sur la TV en 10 minutes maximum. Ne rien placer dans les
+80 px du bas des designs : cette bande est coupée à l'écran (elle cache la barre Canva).
+Les images `media/tvN.png` servent de secours si Canva ou Internet ne répond pas.
+
 ## Ce que chaque TV affiche : `version.json`
 
 Une liste de contenus par TV, joués l'un après l'autre en boucle :
